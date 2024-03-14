@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>em qual estação do ano estamos?</p>
+    <select>
+        <option selected>escolha a alternativa</option>
+        <option value='1'>primavera</option>
+        <option value='2'>verão</option>
+        <option value='3'>outono</option>
+        <option value='4'>inverno</option>
+    </select>
+
+
+    <p>Qual o tipo de impacto que esses dispositivos podem causar no meio ambiente?</p>
+    <select id="questao1">
+        <option selected>escolha a alternativa</option>
+        <option value='a)'>computadores</option>
+        <option value='b)'>emissão de gases poluentes</option>
+        <option value='c)'>tecnologia</option>
+        <option value='d)'>lixo eletronico</option>
+    </select>
+
+    <p>Quais os principais impactos ambientais do uso e desuso dos celulares?</p>
+    <select id="questao2">
+        <option selected>escolha a alternativa</option>
+        <option value='a)'>solo</option>
+        <option value='b)'>ar</option>
+        <option value='c)'>poluição</option>
+        <option value='d)'>substâncias tóxicas na água</option>
+    </select>
+
+    <p>Como o celular afeta a sociedade?</p>
+    <select id="questao3">
+        <option selected>escolha a alternativa</option>
+        <option value='a)'>saúde emocional</option>
+        <option value='b)'>depressão</option>
+        <option value='c)'>ansiedade</option>
+        <option value='d)'>dependencia</option>
+    </select>
+    <p>Qual os danos derivados do lixo eletrônico?</p>
+    <select id="questao4">
+        <option selected>escolha a alternativa</option>
+        <option value='a)'>saúde pública</option>
+        <option value='b)'>agricultura</option>
+        <option value='c)'>natureza</option>
+        <option value='d)'>contaminação do solo</option>
+    </select>
+    <button id="botao">Calcular</button>
+
+    <script>
+let questao1=document.getElementById('questao1');
+let questao2=document.getElementById('questao2');
+let questao3=document.getElementById('questao3');
+let questao4=document.getElementById('questao4');
+let botao=document.getElementById('botao');
+
+function verificar(){
+    let contador=0;
+
+    if(questao1.value=='b)')
+    contador++
+
+    if(questao1.value=='d)')
+    contador++
+
+    if(questao1.value=='a)')
+    contador++
+
+    if(questao1.value=='a)')
+    contador++
+
+}
+botao.addEventListener('click',verificar)
+    </script>
+</body>
+
+</html>
